@@ -22,6 +22,7 @@ const JobsContainer = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllJobs());
+     // eslint-disable-next-line
   }, [page, search, searchStatus, searchType, sort]);
 
   if (isLoading) {
