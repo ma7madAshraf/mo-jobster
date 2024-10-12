@@ -9,16 +9,14 @@ export const getAllJobsThunk = async (_, thunkAPI) => {
   }
   try {
     const resp = await customFetch.get(url);
-    // console.log(resp.data);
     return resp.data;
   } catch (error) {
     return checkForUnauthorizedResponse(error, thunkAPI);
   }
 };
-export const showStatsThunk = async (_, thunkAPI) => {
+export const showStasThunk = async (_, thunkAPI) => {
   try {
     const resp = await customFetch.get(`/jobs/stats`);
-    // console.log(resp.data);
 
     return resp.data;
   } catch (error) {
