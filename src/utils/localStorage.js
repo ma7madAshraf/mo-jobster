@@ -1,4 +1,3 @@
-
 const setLocalStorage = (user) => {
   window.localStorage.setItem("user", JSON.stringify(user));
 };
